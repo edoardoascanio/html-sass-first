@@ -1,13 +1,19 @@
-$colorClass: rgb(62, 35, 161);
+$colorClass: rgb(36, 22, 158);
 $secondColor: lightgrey;
+$thirdColor: white;
 $sizeClass: 5px;
 $borderClass: 1px solid $secondColor;
+$widthSize: 70%;
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: $secondColor;
 }
 
 .title{
@@ -22,15 +28,23 @@ span{
 .tool-bar{
     display: flex;
     justify-content: space-around;
+    width: $widthSize;
+    margin: auto;
     background-color: $colorClass;
     padding: $sizeClass;
 }
 
 a{
     color: $secondColor;
+    text-decoration: none;
     padding: $sizeClass;
     border: $borderClass;
     border-radius: $sizeClass;
+}
+
+a:hover{
+    color: $colorClass;
+    background-color: $thirdColor;
 }
 
 input{
@@ -45,10 +59,19 @@ button{
 
 button:hover {
     color: $colorClass;
-    background-color: white;
+    background-color: $thirdColor;
 }
 
-.border-bottom{
+.contain{
+    width: $widthSize;
     padding: $sizeClass;
-    border-bottom: $borderClass;
+    background-color: $thirdColor;
+    overflow: auto;
+    margin: auto;
+    height: 80vh;
+}
+
+p{
+    color: $colorClass;
+    margin: 15px;
 }
