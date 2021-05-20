@@ -1,0 +1,54 @@
+$colorClass: rgb(62, 35, 161);
+$secondColor: lightgrey;
+$sizeClass: 5px;
+$borderClass: 1px solid $secondColor;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title{
+    text-align: center;
+    margin: 10px;
+}
+
+span{
+    color: $colorClass;
+}
+
+.tool-bar{
+    display: flex;
+    justify-content: space-around;
+    background-color: $colorClass;
+    padding: $sizeClass;
+}
+
+a{
+    color: $secondColor;
+    padding: $sizeClass;
+    border: $borderClass;
+    border-radius: $sizeClass;
+}
+
+input{
+    border: $borderClass;
+    border-radius: $sizeClass;
+}
+
+button{
+    padding: $sizeClass;
+    border-radius: $sizeClass;
+}
+
+button:hover {
+    color: $colorClass;
+    background-color: white;
+}
+
+.border-bottom{
+    padding: $sizeClass;
+    border-bottom: $borderClass;
+}
